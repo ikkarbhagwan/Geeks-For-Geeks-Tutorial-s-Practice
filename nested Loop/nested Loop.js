@@ -61,5 +61,9 @@ for (i = 0; i <= 100; i++) {
 
     if (reminder = i % 2) {
         console.log(`${i} is an EVen Number`);
+    }else{
+        let odd = `${i} is an odd number`;
+        console.log(odd);
+        
     }
 }
