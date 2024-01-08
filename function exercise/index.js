@@ -16,3 +16,11 @@ function calculateSum(min, max) {
 const result = calculateSum(1,20);
 // console.log(result);
 
+//  arrow functions 
+
+const calcFun = (x,y) =>{
+    return x % y;
+
+}
+
+console.log(calcFun(10,65));
