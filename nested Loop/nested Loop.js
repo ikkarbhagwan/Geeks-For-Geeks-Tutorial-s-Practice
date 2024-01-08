@@ -6,14 +6,13 @@
 //         console.log(`${i} * ${j} = ${products} `);
 //     }
 
-}
+
 
 //  for of loop
 
 const Fname = "Bhgawan Ikkar";
 const stringLength = Fname.length;
 
-
-for(let i = 0; i <stringLength; i++){
+for(let i = 0; i<stringLength; i++){
     console.log(Fname[i]);
 }
