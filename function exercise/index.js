@@ -24,3 +24,31 @@ const calcFun = (x,y) =>{
 }
 
 console.log(calcFun(10,65));
+
+
+//  for of - For in loop
+
+
+
+// 2.
+
+const arrayName = ['a','c','c'];
+
+for(let element of arrayName)
+{
+    console.log(element);
+
+}
+
+
+// 3. 
+
+let obj1 = {
+    name : "bhagwan",
+    lName : "Ikkar",
+    age :25
+}
+
+for(let obj in obj1){
+    console.log(obj);
+}
