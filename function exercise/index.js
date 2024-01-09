@@ -49,6 +49,15 @@ let obj1 = {
     age :25
 }
 
-for(let obj in obj1){
-    console.log(obj);
-}
+const obj2 = obj1;
+
+obj1.name = "aashish";
+obj1.age = 12;
+
+console.log(obj2);
+console.log(obj1);
+
+// here  we made shallow copy 
+
+
+
