@@ -114,7 +114,23 @@ const users = [
 
 ];
 
-const outPut = users.filter( (x)=> x.age<30)
-.map((x) => x.firstName);
+const outPut = users.filter((x) => x.age < 30)
+    .map((x) => x.firstName);
 console.log(outPut);
 
+
+// 5. 
+
+const value = [23, 45, 8, 8, 23, 556];
+
+const updatedValue = value.reduce(function (acc, curr) {
+
+    if (curr > acc) {
+        acc = curr;
+
+    }
+    return acc;
+
+}, 0);
+
+console.log(updatedValue);
