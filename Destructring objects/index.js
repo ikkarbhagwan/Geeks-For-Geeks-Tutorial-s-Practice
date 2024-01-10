@@ -84,5 +84,21 @@ let employeee = {
 }
 
 
-let {engineers:{game}} = engineers;
-console.log(game);
+let person = {
+
+
+    fisrtName: 'john',
+    lastName: 'sharma'
+
+};
+
+let { firstName: fName, lastName: lName } = person;
+
+
+// in this exmaple, the firstname and lasname properties are assinged to fanem and lname variable srespectively
+
+
+let { firstName, lastName, middleName } = person;
+console.log(middleName); // undefined
+// In this example, the middleName property doesn’t exist in the person object, therefore, the middleName variable is undefined.
+

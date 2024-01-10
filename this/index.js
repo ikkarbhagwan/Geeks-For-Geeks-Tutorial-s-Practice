@@ -4,9 +4,15 @@ const person = {
     firstName: "John",
     lastName : "Doe",
     id       : 5566,
-    fullName : function() {
-      return this.firstName + " " + this.lastName;
-    }
-  };
+
+ };
+   
+ function sayHello(degree,year){
+    console.log(this.firstName,age)};
+    
+
+//   Function Borrowing - Call and Apply
+
+
 
   
