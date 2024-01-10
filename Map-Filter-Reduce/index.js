@@ -52,13 +52,13 @@ console.log(findSum(array1));
 
 // more 
 
-let array2 = [12,45,56,45,45,89];
+let array2 = [12, 45, 56, 45, 45, 89];
 
-function findMax(array2){
+function findMax(array2) {
     let max = 0;
-    for(let i = 0; i<array2.length;i++){
+    for (let i = 0; i < array2.length; i++) {
 
-        if(array2[i] > max){
+        if (array2[i] > max) {
 
             max = array2[i];
 
@@ -66,21 +66,21 @@ function findMax(array2){
 
     }
     return max;
-    
+
 }
- 
+
 
 console.log(findMax(array2));
 
 
 // 3. 
 
-let num =[12,12,45,65,78];
+let num = [12, 12, 45, 65, 78];
 
-function findSum(num){
+function findSum(num) {
     let sum = 0;
 
-    for(let i = 0; i<num.length; i++){
+    for (let i = 0; i < num.length; i++) {
 
         sum = sum + num[i];
 
@@ -88,15 +88,33 @@ function findSum(num){
     }
     return sum;
 
-    
+
 }
 console.log(findSum(num));
 
 // using reduce method 
 
-let updateArr = num.reduce(function(acc , curr){
+let updateArr = num.reduce(function (acc, curr) {
     acc = acc + curr;
     return acc;
-    
-},0);
+
+}, 0);
+
+
+// 4. 
+
+// chaining of methods 
+
+const users = [
+
+    { firstName: "bhagwan", lastName: "ikkar", age: 23 },
+    { firstName: "suresh", lastName: "ikkar", age: 26 },
+    { firstName: "kunal", lastName: "ikkar", age: 25 },
+    { firstName: "ashok", lastName: "ikkar", age: 29 },
+
+];
+
+const outPut = users.filter( (x)=> x.age<30)
+.map((x) => x.firstName);
+console.log(outPut);
 
