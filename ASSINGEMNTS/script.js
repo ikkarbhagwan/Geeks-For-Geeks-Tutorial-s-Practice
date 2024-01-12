@@ -29,3 +29,4 @@ console.log(numArray);
 let findAddition = numArray.reduce((acc, curr) => acc + curr, 0 );
 
 console.log(findAddition);
+ 
