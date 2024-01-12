@@ -1,25 +1,18 @@
-let products = [
-    {
-      id: "1",
-      item: "Shirt"
-    },
-    {
-      id: "2",
-      item: "Jeans"
-    },
-    {
-      id: "3",
-      item: "T-shirt"
-    },
-    {
-      id: "4",
-      item: "Denim Jacket"
-    },
-    {
-      id: "5",
-      item: "Casual Shoes"
-    }
-   ];
+const str = "React is a library";
 
 
-   const removeItems = document.querySelector("")
+function reverseWordsStr(str){
+
+  let arrOfWords = str.split(" ");
+  let reverseWords = arrOfWords.map((word) =>
+    word.split("").reverse().join(""));
+
+
+    return reverseWords.join(" ");
+
+
+
+}
+
+const result = reverseWordsStr(str);
+console.log(result);
