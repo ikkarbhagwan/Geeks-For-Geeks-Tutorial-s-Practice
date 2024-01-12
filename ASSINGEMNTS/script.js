@@ -16,3 +16,16 @@ function reverseWordsStr(str){
 
 const result = reverseWordsStr(str);
 console.log(result);
+
+
+
+// 2. 
+
+let num = "1234548748546";
+
+let numArray = num.split("").map(Number);
+console.log(numArray);
+
+let findAddition = numArray.reduce((acc, curr) => acc + curr, 0 );
+
+console.log(findAddition);
