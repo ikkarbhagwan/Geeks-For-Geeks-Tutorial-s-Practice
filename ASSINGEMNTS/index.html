@@ -1,18 +1,76 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Add Row on Click</title>
+  <style>
+    /* Add some basic styling for better presentation */
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin-top: 50px;
+    }
+
+    table {
+      border-collapse: collapse;
+      margin: 20px;
+    }
+
+    table, th, td {
+      border: 1px solid black;
+    }
+
+    th, td {
+      padding: 10px;
+    }
+  </style>
 </head>
 <body>
 
-    
-    
+  <table id="myTable">
+    <tr>
+      <th>Column 1</th>
+      <th>Column 2</th>
+      <th>Column 3</th>
+    </tr>
+    <tr>
+      <td>Row 1, Cell 1</td>
+      <td>Row 1, Cell 2</td>
+      <td>Row 1, Cell 3</td>
+    </tr>
+    <tr>
+      <td>Row 2, Cell 1</td>
+      <td>Row 2, Cell 2</td>
+      <td>Row 2, Cell 3</td>
+    </tr>
+    <tr>
+      <td>Row 3, Cell 1</td>
+      <td>Row 3, Cell 2</td>
+      <td>Row 3, Cell 3</td>
+    </tr>
+  </table>
 
+  <button onclick="addRow()">Add Row</button>
 
+  <script>
+    function addRow() {
+      // Get the table reference
+      const table = document.getElementById("myTable");
 
-    <script src="script.js"></script>
+      // Create a new row and cells
+      const newRow = table.insertRow();
+      const cell1 = newRow.insertCell(0);
+      const cell2 = newRow.insertCell(1);
+      const cell3 = newRow.insertCell(2);
+
+      // Set the content for the new cells (you can customize this part)
+      cell1.innerHTML = "New Row, Cell 1";
+      cell2.innerHTML = "New Row, Cell 2";
+      cell3.innerHTML = "New Row, Cell 3";
+    }
+  </script>
+
 </body>
 </html>

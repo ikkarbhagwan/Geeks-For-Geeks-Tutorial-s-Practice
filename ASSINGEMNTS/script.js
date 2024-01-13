@@ -30,3 +30,25 @@ let findAddition = numArray.reduce((acc, curr) => acc + curr, 0 );
 
 console.log(findAddition);
  
+
+2///////////////////////////////////////////////
+
+// Assignment 2: Create an input field and take string input in it from the user. Render the input value on the viewport. Create a button and on click of the button reverse the input and display it on the view.
+
+function reverseInput(){
+  const inputField = document.getElementById("inputField");
+  const userInput = inputField.value;
+
+
+  const reversedInput = userInput.split('').reverse().join('');
+
+  document.getElementById("DisplayInput").textContent = userInput;
+  document.getElementById("displayReveredInput").textContent = reversedInput;
+
+
+
+};
+
+
+3. ///////////////////////////////////////////////////////////////////////////////////////////////////////
+
