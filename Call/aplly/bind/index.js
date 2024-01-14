@@ -150,3 +150,21 @@ findSub.call(teacher2, "11:30" , "12:30");
 findSub.apply(teacher2, ["11:30" , "12:30"]);
 
 // this is examples of call method 
+
+
+// Polifills for bind
+
+let teacher3 = {
+
+    period :"Maths",
+    duration : 2.5,
+
+
+}
+
+let getfull = function (start,End){
+
+    console.log("teaching will starts of " + 
+    this.duration + " " + " of " + this.period);
+
+}
