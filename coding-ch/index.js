@@ -90,3 +90,37 @@ console.log(findAns);
 let getData = [1,2,3,4,5,6,7];
 
 let goodOutput = getData.reduce
+
+
+
+let name = "this is Bhagwan";
+
+let withoutSpacesString = name.replace(/ /g, "");
+console.log(withoutSpacesString);
+
+///////////////////////////////////////////////////////////////////////////////////////////////
+
+let a = "this is row string";
+let ans = a.replace(/ /g, "");
+console.log(ans);
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////
+
+ let string = "this is row string";
+
+ let stringb = string.split(' ').join('');
+ console.log(stringb);
+
+ //////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+ let bat = "this is row room";
+
+ let batAns = bat.split(' ').filter( (char) => { char !== " " }).join('');
+
+ console.log(batAns);
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////
