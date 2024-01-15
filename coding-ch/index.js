@@ -200,3 +200,14 @@ setTimeout(() => {
     .then(data => console.log(data))
     .catch(error => console.error(error));
 
+///////////////////////////////////////////////////////////////
+
+const link = document.getElementById('myLink');
+
+link.addEventListener('click', function(event){
+
+    event.preventDefault();
+    console.log("Link copied but default behavior prevented.");
+
+
+});
