@@ -62,7 +62,7 @@ console.log(findSum);
 
 // 5 .
 
-const obj = [
+const obj5 = [
     {
         name: "ikkar",
         age : 35,
@@ -124,3 +124,20 @@ console.log(ans);
 
 
 //////////////////////////////////////////////////////////////////////////////////////////////
+  
+let obj = { name: "Prakash", age: 111, hairColor: "black", likes: "food" };
+let invertedObject = invertObject(obj);
+
+function invertObject(obj) {
+    let invertedObj = {};
+  
+    for (let key in obj) {
+      invertedObj[obj[key]] = key;
+    }
+  
+    return invertedObj;
+  }
+
+  
+  console.log(invertedObject);
+  
