@@ -211,3 +211,12 @@ link.addEventListener('click', function(event){
 
 
 });
+
+/////////////////////////////////////////////////////////////////////
+
+const button = document.getElementById('button');
+
+button.addEventListener('click', function(event){
+    event.preventDefault();
+    console.log("this is prevent default")
+})
