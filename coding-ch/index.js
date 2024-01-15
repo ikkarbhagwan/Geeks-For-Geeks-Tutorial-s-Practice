@@ -180,4 +180,23 @@ setTimeout(() => {
   })
 
   console.log("End");
+
+
+  /////////////////////////////////////////////////////////
+
+
+  function fetchData() {
+    return new Promise((resolve, reject) => {
+      // Simulating an asynchronous operation
+      setTimeout(() => {
+        const data = 'Data from the server';
+        // Resolve the promise with the data
+        resolve(data);
+      }, 2000);
+    });
+  }
   
+  fetchData()
+    .then(data => console.log(data))
+    .catch(error => console.error(error));
+
