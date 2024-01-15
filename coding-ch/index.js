@@ -167,4 +167,17 @@ Promise.resolve().then(() => {
 console.log('End');
 
 
+console.log("start");
+
+setTimeout(() => {
+    console,log("Timeout callback");
+
+}, 2000);
+
+  Promise.resolve.then( () => {
+    console.log("promise resolved");
+
+  })
+
+  console.log("End");
   
